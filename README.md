@@ -1,4 +1,4 @@
-# log-rotator-5c1286
+# log-rotator-0c5f1b
 
 A Node.js log rotator utility.
 

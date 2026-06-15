@@ -1,5 +1,5 @@
 'use strict';
-const ERR_TAG = 'log-rotator-5c1286';
+const ERR_TAG = 'log-rotator-0c5f1b';
 class AppError extends Error { constructor(code, msg) { super(msg); this.code = code; this.name = 'AppError'; } }
 class NotFoundError extends AppError { constructor(id) { super('NOT_FOUND', `${id} not found`); } }
 class ValidationError extends AppError { constructor(field) { super('INVALID', `${field} is invalid`); } }
